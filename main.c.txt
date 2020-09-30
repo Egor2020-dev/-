@@ -4,10 +4,10 @@ int main(int argc, char **argv)
 {
 <<<<<<< HEAD
 printf("Enter your name: ");
-
 fgets(name, 255, stdin);
 printf("length = %d\n", strlen(name)); /* debug line */
 name[strlen(name)-1] = '\0'; /* remove the newline at the end */
+<<<<<<< HEAD
 printf("Hello %s!\n", name);ff
 =======
 char first[255], last[255];
@@ -18,5 +18,8 @@ printf("Now enter your last name: ");
 gets(last); /* buffer overflow? what's that? */
 printf("Hello %s %s!\n", first, last);
 >>>>>>> 1661a1b3a8510b57b62c6412917b172629149f67
+=======
+printf("Hello %s!\n", name);
+>>>>>>> parent of cc65238... Use proper grammr.
 return 0;
 }
